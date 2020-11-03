@@ -380,12 +380,12 @@
 		$idade = $intervalo->y;
 
 		if ($cadastro->responsavel_financeiro == 'Nao' || $idade < 18)
-		{
+		{ // Coloca os cabeçalhos necessários para que o XML funcione.
 			$xml = new SimpleXMLElement($xml_cadastro_com_responsavel);
 			$xml = $xml->asXML();
 			//echo 'com responsável' ;
 		}
-		else {
+		else { // Transforma o array em XML já com os cabeçalhos necessários
 			$xml_cadastro_totvs = $xml_cadastro_sem_responsavel;
 			$xml = ArrayToXml::convert($xml_cadastro_totvs);
 			//echo 'sem responsável' ;

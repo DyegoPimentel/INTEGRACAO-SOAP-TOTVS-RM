@@ -1,4 +1,4 @@
-# Integracao TOTVS-RM via PHP
+# Integracao SOAP via PHP - TOTVS-RM
 
 Para que a integração via SOAP funcione, é necessário que a saida seja em XML. Sendo assim, pode ser necessário inserir a CLASS ArraytoXML no controller.
 
